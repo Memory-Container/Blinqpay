@@ -5,6 +5,8 @@
 }
 
 body {
+    position: relative;
+    z-index: -999;
     font-family: "Be Vietnam pro";
 }
 
@@ -300,7 +302,7 @@ body {
 }
 
 .section2 .logo {
-    max-width: 834px;
+    max-width: 662.64px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -311,12 +313,14 @@ body {
     width: 66.54px;
     height: 35px;
     object-fit: cover;
+    opacity: 40%;
 }
 
 .section2-logo2 {
     width: 81.27px;
     height: 28px;
     object-fit: cover;
+    opacity: 40%;
 }
 
 .section2-logo3 {
@@ -329,6 +333,7 @@ body {
     width: 32.41px;
     height: 31px;
     object-fit: cover;
+    opacity: 40%;
 }
 
 .section2-logo5 {
@@ -570,7 +575,8 @@ body {
     background-repeat: no-repeat;
     max-width: 700px;
     width: 100%;
-    min-height: 352px;
+    min-height: 285px;
+    border-radius: 10px 0 0 10px;
 }
 
 .bottom-background {
@@ -751,13 +757,28 @@ body {
         justify-content: center;
         align-items: center;
         background-color: #ffbc51;
-        box-shadow: 0 4px 4px 0 #ffbc51;
         color: white;
         font-weight: 700;
         font-size: 14px;
         border-radius: 4px;
         width: 200px;
         height: 50px;
+        position: relative;
+        z-index: 2;
+    }
+    .button::after {
+        content: "";
+        background-color: #FFBC51;
+        opacity: 0.8;
+        width: calc(200px * 0.6);
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        border-radius: 6px;
+        filter: blur(18px);
+        z-index: -2;
     }
 }
 

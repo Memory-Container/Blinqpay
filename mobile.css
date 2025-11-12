@@ -15,35 +15,37 @@
         display: block;
     }
     .hero-logo {
-        align-items: ceneter    ;
+        align-items: center;
         margin-top: 33px;
         display: block;
         max-width: 100%;
         display: flex;
         justify-content: space-between;
+        max-width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         .logo1 {
-            width: 86px;
-            height: 43px;
+            width: 50px;
             object-fit: cover;
         }
         .logo2 {
-            width: 82px;
-            height: 31px;
+            width: 50px;
             object-fit: cover;
+            opacity: 60%;
         }
         .logo3 {
-            width: 85px;
-            height: 42px;
+            width: 50px;
             object-fit: cover;
+            opacity: 70%;
         }
         .logo4 {
-            width: 53px;
-            height: 52px;
+            width: 30px;
             object-fit: cover;
+            opacity: 70%;
         }
         .logo5 {
-            width: 53px;
-            height: 53px;
+            width: 30px;
             object-fit: cover;
             opacity: 70%;
         }
@@ -136,8 +138,9 @@
                 }
             }
             .right-content {
-                max-width: 100%;
-                background-size: contain;
+                background-image: url(./assets/section4-img2.png);
+                background-size: cover;
+                border-radius: 10px;
             }
         }
     }
@@ -151,10 +154,12 @@
         display: none;
     }
     .section5 {
-        min-height: 580px;
+        min-height: 600px;
+        padding: 81px 0 97px;
         .container {
             flex-direction: column;
             align-items: center;
+            
             .left-content {
                 margin: 51px 0 0 0;
                 .box {
@@ -246,6 +251,10 @@
         height: 420px;
     }
     .hero-logo {
+        max-width: 343px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         .logo1 {
             width: 26px;
             height: 13px;
@@ -255,21 +264,25 @@
             width: 32px;
             height: 11px;
             object-fit: cover;
+            opacity: 60%;
         }
         .logo3 {
             width: 25px;
             height: 12px;
             object-fit: cover;
+            opacity: 70%;
         }
         .logo4 {
             width: 13px;
             height: 12px;
             object-fit: cover;
+            opacity: 70%;
         }
         .logo5 {
             width: 13px;
             height: 13px;
             object-fit: cover;
+            opacity: 70%;
         }
     }
     .header-logo {
@@ -300,7 +313,7 @@
     }
     .hero-img {
         max-width: 270px;
-        top: 111%;
+        top: 127%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -364,7 +377,13 @@
     .section4 {
         .container {
             .right-content {
-                min-height: 215px;
+                max-width: 100%;
+                border-radius: 0px;
+            }
+            @media only screen and (max-width: 483px) {
+                .right-content {
+                    min-height: 215px;
+                }
             }
             .left-content {
                 .box {
@@ -405,7 +424,7 @@
         }
     }
     .middle-background {
-        margin-top: 200px;
+        margin-top: 250px;
     }
     .column1 .box {
         font-size: 27.64px;
