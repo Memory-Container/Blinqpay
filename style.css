@@ -6,6 +6,7 @@
 
 body {
     position: relative;
+    background-color: #F7F3FA;
     z-index: -999;
     font-family: "Be Vietnam pro";
 }
@@ -340,6 +341,7 @@ body {
     width: 32.5px;
     height: 32.5px;
     object-fit: cover;
+    opacity: 40%;
 }
 
 .section2 .content {
